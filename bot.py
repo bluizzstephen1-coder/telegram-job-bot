@@ -10,8 +10,8 @@ bot = Bot(token=TOKEN)
 messages = [
     "💻 New online job opportunity posted!",
     "🔥 Earn from home using your phone.",
-    "📌 Daily online job updates available.",
-    "🚀 Start earning online today!"
+    "📌 Daily online job updates available under Bluizz mentorship.",
+    "🚀 Get mentored by De Bluizz and start earning online today!"
 ]
 
 while True:
