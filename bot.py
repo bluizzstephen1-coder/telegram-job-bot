@@ -1,8 +1,9 @@
 import time
 import random
-from telegram import Bot
+import os
+from telegram import Bot, __version__ as ptb_version
 
-TOKEN = "YOUR_REAL_BOT_TOKEN"
+TOKEN = os.environ.get("BOT_TOKEN")  # your token from Render environment variable
 CHAT_ID = "-1003870214565"
 
 bot = Bot(token=TOKEN)
@@ -10,8 +11,8 @@ bot = Bot(token=TOKEN)
 messages = [
     "💻 New online job opportunity posted!",
     "🔥 Earn from home using your phone.",
-    "📌 Daily online job updates available under Bluizz mentorship.",
-    "🚀 Get mentored by De Bluizz and start earning online today!"
+    "📌 Daily online job updates available.",
+    "🚀 Start earning online today!"
 ]
 
 while True:
